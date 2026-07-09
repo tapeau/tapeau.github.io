@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me - John Lorenzo Tapia</title>
+  <meta name="description" content="About John Lorenzo Tapia's education, work experience, and contact details.">
+
+  <!-- Applies the saved theme before first paint to avoid a flash -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <img class="nav-photo" src="assets/profile.webp" alt="Profile photo of John Lorenzo Tapia">
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">About Me</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch color mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"/>
+          <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- Typewriter greeting -->
+    <p class="term-line">
+      <span class="prompt">jl@world:~/about-me$</span>
+      <span class="type-hero">Hi, I'm JL! Welcome to my website.</span><span class="cursor" aria-hidden="true"></span>
+    </p>
+
+    <!-- Hero: header photo with profile photo -->
+    <section class="hero">
+      <div class="hero-banner">
+        <img class="banner-img" src="assets/banner.webp" alt="Header background photo">
+        <img class="profile-img" src="assets/profile.webp" alt="Profile photo of John Lorenzo Tapia">
+      </div>
+
+      <h1>John Lorenzo Tapia (JL)</h1>
+
+      <!-- Keywords row: add or remove <li> items freely -->
+      <ul class="keywords">
+		    <li>Computer Science</li>
+        <li>IT Management</li>
+        <li>Systems Design</li>
+        <li>Cybersecurity</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="type-on-view">About Me</h2>
+      <p>
+        Passionate for all things digital. Aims to pursue a career path in IT management or cybersecurity. Hobbies include literature, writing, gaming, and sports. <br><br>
+		<i>"Herein hast forever happy prov'd: in life thou liv'dst, in death thou died'st belov'd."</i>
+		<br>- William Shakespeare
+      </p>
+      <a class="btn" href="assets/cv.pdf" download>Download CV</a>
+    </section>
+
+    <section>
+      <h2 class="type-on-view">Education</h2>
+
+      <!-- ================================================================
+           EDUCATION ENTRY - to add another, copy from here...
+           ================================================================ -->
+      <article class="entry">
+        <img class="entry-logo" src="assets/logos/dlsu.svg" alt="De La Salle University logo">
+        <div class="entry-body">
+          <h3>De La Salle University</h3>
+          <p class="entry-meta">
+            <span>BS Computer Science</span>
+            <span>2021 – 2027</span>
+            <span>GPA: 2.890 / 4.000</span>
+          </p>
+          <p>
+            One of the Philippines' most prestigious universities in Taft, Manila.<br>
+            Coursework included software development, IT management, computer networking, and cybersecurity,
+            from theoretical to practical exercises.<br>
+            Became a member of the La Salle Computer Society (LSCS).
+          </p>
+        </div>
+      </article>
+      <!-- ================================================================
+           ...to here, then paste below and edit the details.
+           ================================================================ -->
+
+    </section>
+
+    <section>
+      <!-- <h2 class="type-on-view">Work Experience</h2> -->
+
+      <!-- ================================================================
+           WORK EXPERIENCE ENTRY - to add another, copy from here...
+           ================================================================ -->
+      <!-- <article class="entry">
+        <img class="entry-logo" src="assets/placeholder-logo.svg" alt="Company logo">
+        <div class="entry-body">
+          <h3>Company Name</h3>
+          <p class="entry-meta">
+            <span>Position Title</span>
+            <span>Mon 20XX – Mon 20XX</span>
+          </p>
+          <p>
+            Placeholder description. Summarize what you did, the tools you used,
+            and one concrete result if you have one.
+          </p>
+        </div>
+      </article> -->
+      <!-- ================================================================
+           ...to here, then paste below and edit the details.
+           ================================================================ -->
+
+    </section>
+
+    <section>
+      <div class="contact-cta">
+        <p>I'd love to hear from you!</p>
+        <a class="btn" href="contact.html">See Contact Details</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 John Lorenzo Tapia · exit 0</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

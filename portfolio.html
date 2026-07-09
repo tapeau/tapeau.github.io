@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - John Lorenzo Tapia</title>
+  <meta name="description" content="Projects and certifications by John Lorenzo Tapia.">
+
+  <!-- Applies the saved theme before first paint to avoid a flash -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <img class="nav-photo" src="assets/profile.webp" alt="Profile photo of John Lorenzo Tapia">
+      <ul class="nav-links">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch color mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"/>
+          <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- Typewriter greeting -->
+    <p class="term-line">
+      <span class="prompt">jl@world:~/portfolio$</span>
+      <span class="type-hero">Here's what I've been building lately.</span><span class="cursor" aria-hidden="true"></span>
+    </p>
+
+    <section class="hero">
+      <h1>Portfolio</h1>
+      <p>
+        All the projects I have worked throughout the years are listed here.
+        They include both university projects that were required by my courses,
+        and personal projects that I pursued for skill development and recreation.<br><br>
+        Everything here is free and open-source, so feel free to visit
+        their respective GitHub repositories and try them!
+      </p>
+    </section>
+
+    <section>
+      <h2 class="type-on-view">University Projects</h2>
+      <p>
+        These projects were done as part of my university courses, most of which are
+        Machine Projects (MPs) or Major Course Outputs (MCOs) that are required to pass the course.<br><br>
+        All of these were projects made for Computer Science or IT-specific courses. More information 
+        can be found at their respective GitHub repositories.
+      </p>
+
+      <div class="project-grid">
+
+        <!-- ==============================================================
+             UNIVERSITY PROJECT ENTRY — to add another, copy from here...
+             ============================================================== -->
+        <article class="project-card">
+          <img src="assets/projects/university/file-exchange.webp" alt="Screenshot of Java File Exchange System">
+          <div class="project-body">
+            <h3>Java File Exchange System</h3>
+            <p>
+              A simple command-line file exchange system written in Java.
+            </p>
+            <a class="btn" href="https://github.com/tapeau/CSNETWK.file-exchange-system" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+        <!-- ==============================================================
+             ...to here, then paste below and edit the details.
+             ============================================================== -->
+        <article class="project-card">
+          <img src="assets/projects/university/tftp.webp" alt="Screenshot of EASY TFTP">
+          <div class="project-body">
+            <h3>EASY TFTP</h3>
+            <p>
+              A command-line TFTP client application written in Python.
+            </p>
+            <a class="btn" href="https://github.com/tapeau/NSCOM01.tftp-client" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/projects/university/ping.webp" alt="Screenshot of PING">
+          <div class="project-body">
+            <h3>PING</h3>
+            <p>
+              A simple command-line client-side ping (or ICMP Echo) implementation written in Python.
+            </p>
+            <a class="btn" href="https://github.com/tapeau/NSCOM02.python-ping" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/projects/university/gray.webp" alt="Screenshot of RGB to Grayscale">
+          <div class="project-body">
+            <h3>RGB to Grayscale</h3>
+            <p>
+              A simple C and x86 NASM program that converts an RGB image into its grayscale equivalent.
+            </p>
+            <a class="btn" href="https://github.com/tapeau/LBYARCH.rgb-to-grayscale" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/projects/university/pokemon.webp" alt="Screenshot of Pokemon Matchup Simulator">
+          <div class="project-body">
+            <h3>Pokemon Matchup Simulator</h3>
+            <p>
+              A RISC-V (RARS) program that simulates a simple matchup between the types of two of any of the first 100 Generation 1 Pokemons.
+            </p>
+            <a class="btn" href="https://github.com/tapeau/LBYARCH.pokemon-matchup-simulator" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/projects/university/bfs.webp" alt="Screenshot of Breadth-First Search (BFS) Visualizer">
+          <div class="project-body">
+            <h3>Breadth-First Search (BFS) Visualizer</h3>
+            <p>
+              A web simulator and visualizer in JavaScript for a breadth-first search (BFS) algorithm on an undirected graph.
+            </p>
+            <a class="btn" href="https://github.com/tapeau/CSINTSY.bfs-undirected-graph" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/projects/university/os.webp" alt="Screenshot of OS Emulator">
+          <div class="project-body">
+            <h3>OS Emulator</h3>
+            <p>
+              A complex command-line operating system emulator written in C++ that simulates some of the crucial features of modern operating systems.
+            </p>
+            <a class="btn" href="https://github.com/tapeau/CSOPESY.os-emulator" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/projects/university/toll.webp" alt="Screenshot of TOLL SYSTEM">
+          <div class="project-body">
+            <h3>TOLL SYSTEM</h3>
+            <p>
+              A client/server command-line toll system implementation written in Python.
+            </p>
+            <a class="btn" href="https://github.com/tapeau/NSAPDEV.toll-system" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/projects/university/reservation.webp" alt="Screenshot of Computer Laboratory Reservation System">
+          <div class="project-body">
+            <h3>Computer Laboratory Reservation System</h3>
+            <p>
+              A computer laboratory reservation system for De La Salle University written in JavaScript and powered by MongoDB.
+            </p>
+            <a class="btn" href="https://github.com/tapeau/CCAPDEV.computer-lab-reservation" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section>
+      <h2 class="type-on-view">Personal Projects</h2>
+      <p>
+        These projects were pursued for personal skill development, recreation, or whenever
+        I need a very specific tool for my system and I couldn't find a good program for it online, 
+        so I took it upon myself to create them. Some are no longer in active development, since 
+        they already fulfill the function I intended for them.<br><br>
+        Watch out for this section as I create and add new projects from time to time!
+      </p>
+
+      <div class="project-grid">
+
+        <!-- ==============================================================
+             PERSONAL PROJECT ENTRY — to add another, copy from here...
+             ============================================================== -->
+        <article class="project-card">
+          <img src="assets/projects/personal/admin-z.webp" alt="Screenshot of Admin-Z">
+          <div class="project-body">
+            <h3>Admin-Z</h3>
+            <p>
+              An administrative dashboard application for Windows 10/11 written in Python.<br><br>
+              <b>Tags:</b> IT management, automation, AI-assisted software development
+            </p>
+            <a class="btn" href="https://github.com/tapeau/Admin-Z" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+        <!-- ==============================================================
+             ...to here, then paste below and edit the details.
+             ============================================================== -->
+        <article class="project-card">
+          <img src="assets/projects/personal/desk-photos.webp" alt="Screenshot of Desk Photos">
+          <div class="project-body">
+            <h3>Desk Photos</h3>
+            <p>
+              A JavaScript/CSS plugin for Obsidian that adds sticky and floating photos to your screen in editing mode.<br><br>
+              <b>Tags:</b> Productivity, Scripting, Photo manipulation, AI-assisted software development
+            </p>
+            <a class="btn" href="https://github.com/tapeau/Desk-Photos" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/projects/personal/nessus.webp" alt="Screenshot of Nessus Vulnerability Scan">
+          <div class="project-body">
+            <h3>Nessus Vulnerability Scan</h3>
+            <p>
+              A report from a Nessus vulnerability scan conducted on my main system.<br><br>
+              <b>Tags:</b> IT Management, Cybersecurity, Systems Hardening, Vulnerability Management
+            </p>
+            <a class="btn" href="https://github.com/tapeau/Nessus-vulnerability-scan" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="assets/projects/personal/smallguard.webp" alt="Screenshot of SmallGuard">
+          <div class="project-body">
+            <h3>SmallGuard</h3>
+            <p>
+              A file integrity monitoring application for Windows 10/11 written in Python.<br><br>
+              <b>Tags:</b> Automation, Scripting, Cryptography, Cybersecurity
+            </p>
+            <a class="btn" href="https://github.com/tapeau/SmallGuard" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section>
+      <!-- <h2 class="type-on-view">Certifications</h2> -->
+
+      <!-- ================================================================
+           CERTIFICATION ENTRY — to add another, copy from here...
+           ================================================================ -->
+      <!-- <article class="entry">
+        <img class="entry-logo" src="assets/placeholder-logo.svg" alt="Certificate issuer logo">
+        <div class="entry-body">
+          <h3>Certification Name</h3>
+          <p>
+            Placeholder description. Who issued it, when you earned it, and what it covers.
+          </p>
+          <a class="btn" href="https://example.com/credential" target="_blank" rel="noopener">See Credential</a>
+        </div>
+      </article> -->
+      <!-- ================================================================
+           ...to here, then paste below and edit the details.
+           ================================================================ -->
+
+    </section>
+
+    <section>
+      <div class="contact-cta">
+        <p>Ready to collaborate? Let's get in touch!</p>
+        <a class="btn" href="contact.html">See Contact Details</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 John Lorenzo Tapia · exit 0</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
